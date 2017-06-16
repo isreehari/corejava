@@ -50,10 +50,86 @@ public class ConditionalLoopArrays {
 //            System.out.println("Crowded");
 //        }
 
-if(numberRooms > 0 && numberStudents / numberRooms > 30){
+        if(numberRooms > 0 && numberStudents / numberRooms > 30){
             System.out.println("Crowded");
         }
         
+        //loops 
+        // 1) while 
+        
+        int kValue = 5; 
+        int factorial = 1;
+        
+        while( kValue > 1){
+            factorial *= kValue;
+            kValue -= 1;
+        }
+        
+        System.out.println(factorial);
+        
+        kValue = 5;
+        factorial = 1;
+        while( kValue > 1)
+        factorial *= kValue--;        
+        System.out.println(factorial);
+        
+        //2) do while
+        int iVal = 5;
+        do{
+            System.out.println(iVal);
+            System.out.print(" * 2 = ");
+            iVal *= 2;
+            System.out.println(iVal);
+            
+        } while( iVal < 100);
+        
+        
+       
+        
+        for(int jVal =1; jVal < 100; jVal *=2){
+            System.out.println(jVal);            
+        }
+        
+        // Arrays
+        
+        float[] theFloatVal = new float[3];
+        
+        theFloatVal[0] = 10.0f;
+        theFloatVal[1] = 20.0f;
+        theFloatVal[2] = 1.0f;
+        
+        float sum = 0.0f;
+        
+        for( int i = 0 ; i < theFloatVal.length; i++){
+            sum += theFloatVal[i];
+        }
+        
+        System.out.println("Sum: " + sum);
+        
+        
+        float[] theFloatVal2 = {10.0f, 11.0f, 23.0f};
+        
+        float sum2 = 0.0f;
+        
+        for( int i = 0 ; i < theFloatVal2.length; i++){
+            sum2 += theFloatVal2[i];
+        }
+        
+        System.out.println("Sum: " + sum2);
+        
+        
+        //for each loop
+        
+        float[] theFloatVal3 = {10.0f, 11.0f, 23.0f};
+        
+        float sum3 = 0.0f;
+        
+        for(float theVal:theFloatVal3){
+            sum3 += theVal;
+        }
+        
+        System.out.println("Sum: " + sum3);
+
         
         System.out.println();
         System.out.println("** end programm **");        
