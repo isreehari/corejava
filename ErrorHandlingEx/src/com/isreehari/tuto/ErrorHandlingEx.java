@@ -26,6 +26,7 @@ public class ErrorHandlingEx {
         int total = 0;
         
         try{
+            System.out.println(ErrorHandlingEx.class.getResource("Numbers.txt"));
             URL path = ErrorHandlingEx.class.getResource("Numbers.txt");
             File f = new File(path.getFile());
             
