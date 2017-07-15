@@ -3,20 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.isreehari.tuto;
+package com.isreehari.myapp;
+
+import com.isreehari.tuto.Addition;
+import com.isreehari.tuto.CalculateBase;
+import com.isreehari.tuto.Devision;
+import com.isreehari.tuto.MathEquation;
+import com.isreehari.tuto.Multiple;
+import com.isreehari.tuto.Subtract;
 
 /**
  *
  * @author sinukoll
  */
-public class CalcEngine {
+public class PackageEx {
 
-        
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
         MathEquation[] equations = new MathEquation[4];
         
         equations[0] = new MathEquation('a', 10.0d, 11.0d);
@@ -48,15 +55,6 @@ public class CalcEngine {
             System.out.println("Resut: " + calculator.getClass());
             System.out.println(calculator.getResultValue());
         }
-        
-        
-        
-        
-        
-        
-                
-            
-        
     }
     
 }
