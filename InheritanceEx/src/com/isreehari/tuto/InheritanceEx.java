@@ -68,6 +68,46 @@ public class InheritanceEx {
         System.out.println(cf3.getAvailableSeats());        
         System.out.println("*****************************");
         
+        // Object class
+        
+        Object o = new Flight[5];
+        
+         o = new CargoFlight();
+        
+       // o.add1Package(1.0, 2.5, 3.0);
+       
+       if(o instanceof CargoFlight){
+         CargoFlight cf4 = (CargoFlight) o;       
+         cf.add1Package(1.4f, 14.0f, 1.2f);
+    }
+       
+       // Object Equality
+       
+       Flight ftt1 = new Flight(175);
+       Flight ftt2 = new Flight(175);
+       
+       System.out.println("*********************************************");
+       if(ftt1.equals(ftt2))
+       System.out.println(ftt1);
+       System.out.println(ftt2);
+       System.out.println("*********************************************");       
+       
+       
+       ftt2 = ftt1; // testing super special reference.
+       
+       System.out.println("*********************************************");
+       if(ftt1.equals(ftt2))
+       System.out.println(ftt1);       
+       System.out.println("*********************************************");       
+       
+       
+       
+       
+       
+      
+        
+        
+        
                 
         
         

@@ -12,15 +12,41 @@ package com.isreehari.tuto;
 public class Flight {
      private int passengers;
      int seats;
+     private int flightNumber;
      
      int getSeats() {  // testing function overloading
          
          return 150; 
      }
+     
+     @Override 
+     public boolean equals(Object o){
+         
+         if(super.equals(o))  // using super reference to call base class equals method.
+             return false;
+         
+         if(o instanceof Flight){
+                Flight otherFlight = (Flight)o;
+                
+                if(this.flightNumber == otherFlight.flightNumber)
+                    return true;
+                else
+                    return false;                   
+               
+         }
+         else
+             return false;
+         
+     }
     
     public Flight(){
         this.seats = 150;
         this.passengers = 0;
+    }
+    
+    public Flight(int flightNumber){
+        this();
+        this.flightNumber = flightNumber;
     }
     
    public void addPassenger(){
@@ -32,8 +58,8 @@ public class Flight {
     }
     
     public int getAvailableSeats(){
-  //      return this.seats - this.passengers;
-        return getSeats() - this.passengers;  // Testing function over loading
+        return this.seats - this.passengers;
+  //      return getSeats() - this.passengers;  // Testing function over loading
 
     }
     
