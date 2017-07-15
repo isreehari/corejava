@@ -20,3 +20,31 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/tuto3/HelloWorld/nbproject/private/
+/tuto3/HelloWorld/build/
+/Tuto4/nbproject/private/
+/Tuto4/build/
+/VariablesOperators/nbproject/private/
+/VariablesOperators/build/
+/ConditionalLoopArrays/nbproject/private/
+/ConditionalLoopArrays/build/
+/CalcEngine/nbproject/private/
+/CalcEngine/build/
+/FirstClassEx/nbproject/private/
+/FirstClassEx/build/
+/ClassInitializers/nbproject/private/
+/ClassInitializers/build/
+/Parameters/nbproject/private/
+/Parameters/build/
+/InheritanceEx/nbproject/private/
+/InheritanceEx/build/
+/StringEquality/nbproject/private/
+/StringEquality/build/
+/PrimitiveEx/nbproject/private/
+/PrimitiveEx/build/
+/ErrorHandlingEx/nbproject/private/
+/ErrorHandlingEx/build/
+/PackageEx/nbproject/private/
+/PackageEx/build/
+/InterfaceEx/nbproject/private/
+/InterfaceEx/build/
